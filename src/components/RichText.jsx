@@ -17,15 +17,14 @@ export class RichText extends Component {
             document.querySelector(".kgEditor").style.pointerEvents = "none";
         }
     }
-
     render() {
         return (
             <div className={"kgEditor"}>
                 <ReactWEditorOfLang
                     config={{
                         uploadImgShowBase64: true,
-                        uploadImgMaxSize: 2 * 1024 * 1024, // 2M
-                        lang: "en"
+                        uploadImgMaxSize: (typeof this.props.maxSize === 'number' ? this.props.maxSize : 6) * 1024 * 1024, // 2M
+                        lang: "en",
                     }}
                     placeholder="Please enter the text here"
                     value={this.state.value}

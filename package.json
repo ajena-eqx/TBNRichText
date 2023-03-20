@@ -1,7 +1,7 @@
 {
   "name": "tbnrichtext",
   "widgetName": "TBNRichText",
-  "version": "1.0.0",
+  "version": "1.2.0",
   "description": "My widget description",
   "copyright": "TBN2021",
   "author": "qntbkk",
@@ -9,9 +9,10 @@
     "node": ">=12"
   },
   "config": {
-    "projectPath": "./tests/testProject/",
+    "widgetPath": "D:\\GDCLive-branch_MVP1.2_Sprint1_2\\widgets",
+    "projectPath": "D:\\GDCLive-branch_MVP1.2_Sprint1_2/",
     "mendixHost": "http://localhost:8080",
-    "developmentPort": "3000"
+    "developmentPort": 3000
   },
   "packagePath": "tbn",
   "scripts": {
@@ -24,11 +25,13 @@
   },
   "license": "Apache-2.0",
   "devDependencies": {
-    "@mendix/pluggable-widgets-tools": "^9.0.0"
+    "@mendix/pluggable-widgets-tools": "^9.13.2"
   },
   "dependencies": {
+    "@rollup/plugin-node-resolve": "^15.0.1",
     "classnames": "^2.2.6",
     "i18next": "^21.5.4",
+    "react": "^16.14.0",
     "wangeditor-for-react": "^1.5.3"
   }
 }
